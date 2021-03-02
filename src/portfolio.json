@@ -1,0 +1,94 @@
+{
+    "gallery": [
+        {
+            "id": "1",
+            "tags": "web",
+            "alt": "19th ammendment app",
+            "src": "/19am_Thumb.jpg",
+            "title": "19th Ammendment App",
+            "description": "This is the app I built and its description",
+            "subSection": {
+                "image1": {
+                    "src": "/19am_App.jpg",
+                    "alt": "19th ammendment app"
+                },
+                "image2": {
+                    "src": "/19am_Desktop.jpg",
+                    "alt": "19th ammendment app2"
+                }
+            }
+        },
+        {
+            "id": "2",
+            "tags": "print",
+            "alt": "ADM Booklet",
+            "src": "/ADMbookletCover_Thumb.jpg",
+            "title": "ADM Booklet",
+            "description": "This is the app I built and its description2",
+            "subSection": {
+                "image1": {
+                    "src": "/ADMbooklet_1.jpg",
+                    "alt": "ADM Booklet"
+                },
+                "image2": {
+                    "src": "/ADMbooklet_2.jpg",
+                    "alt": "ADM Booklet2"
+                }
+            }
+        },
+        {
+            "id": "3",
+            "tags": "print",
+            "alt": "aDM Booklet",
+            "src": "/ADMbookletCover_Thumb.jpg",
+            "title": "ADM Booklet",
+            "description": "This is the app I built and its description2",
+            "subSection": {
+                "image1": {
+                    "src": "/ADMbooklet_1.jpg",
+                    "alt": "ADM Booklet"
+                },
+                "image2": {
+                    "src": "/ADMbooklet_2.jpg",
+                    "alt": "ADM Booklet2"
+                }
+            }
+        },
+        {
+            "id": "4",
+            "tags": "print",
+            "alt": "aDM Booklet",
+            "src": "/ADMbookletCover_Thumb.jpg",
+            "title": "ADM Booklet",
+            "description": "This is the app I built and its description2",
+            "subSection": {
+                "image1": {
+                    "src": "/ADMbooklet_1.jpg",
+                    "alt": "ADM Booklet"
+                },
+                "image2": {
+                    "src": "/ADMbooklet_2.jpg",
+                    "alt": "ADM Booklet2"
+                }
+            }
+        },
+        {
+            "id": "5",
+            "tags": "print",
+            "alt": "aDM Booklet",
+            "src": "/ADMbookletCover_Thumb.jpg",
+            "title": "ADM Booklet",
+            "description": "This is the app I built and its description2",
+            "subSection": {
+                "image1": {
+                    "src": "/ADMbooklet_1.jpg",
+                    "alt": "ADM Booklet"
+                },
+                "image2": {
+                    "src": "/ADMbooklet_2.jpg",
+                    "alt": "ADM Booklet2"
+                }
+            }
+        }
+    ]
+}

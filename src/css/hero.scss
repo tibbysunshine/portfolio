@@ -1,0 +1,197 @@
+/** 
+HERO SECTION
+**/
+
+#hero {
+	position: relative;
+	overflow: hidden;
+	height: 100vh;
+	width: 100%;
+	display: table;
+	background: linear-gradient(
+		rgba(244, 255, 92, 0.8), 
+		rgb(239, 254, 220), 
+		rgba(116, 242, 203, 0.85)
+	);
+	z-index:10;
+}
+
+.hero-parallax {
+	background-attachment: fixed !important;
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+}
+
+.hero-text-wrapper {
+	height: 100%;
+	width: 100%;
+	background-image: url(../images/hero/hero-text-bg-high.png);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.hero-avatar {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 80%;
+}
+
+.hero-avatar-img {
+	max-width: 35%;
+    width: 100%;
+    height: auto;
+}
+
+.hero-bubble {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 25%;
+}
+
+.hero-bubble-img {
+    position: absolute;
+	bottom: 55%;
+	width: 100%;
+	max-width: 35%;
+}
+
+.hero-bubble-text {
+	position: absolute;
+    width: 35%;
+	height: 43%;
+}
+
+.bubble-text-wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.bubble-text-1 {
+    color: #FF394F;
+    font-size: 64px;
+    font-size: 4vw;
+    font-weight: 800;
+    position: absolute;
+    top: 27%;
+    left: 25%;
+}
+
+.bubble-text-1 div,
+.bubble-text-2 div {
+	overflow: hidden;
+	border-right: .15em solid #555;
+	white-space: nowrap;
+	margin: 0 auto;
+	animation: 
+	typing 1.75s steps(30, end),
+	blinking-cursor .9s step-end infinite;
+	animation-delay: 1s;
+}
+
+.bubble-text-2 {
+    color: #FF394F;
+    font-size: 30px;
+    font-size: 1.7vw;
+    font-weight: 800;
+    position: absolute;
+    top: 55%;
+	left: 25%;
+	animation: delay-animate 1.5s step-end;
+}
+
+/* HERO ANIMATIONS */
+
+.slideInRight {
+	animation-name: slideInRight;
+}
+
+.animated {
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	animation-delay: .5s;
+}
+
+@keyframes slideInRight {
+	from {
+		transform: translate3d(-300%, 0, 0);
+		transform: scale(0);
+		transform-origin: center left;
+		visibility: visible;
+	}
+
+	to {
+		transform: translate3d(0, 0, 0);
+		transform: scale(1);
+		transform-origin: center left;
+	}
+}
+
+@-webkit-keyframes slideInRight {
+	from {
+		transform: translate3d(-300%, 0, 0);
+		visibility: visible;
+	}
+
+	to {
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+/* The typing effect */
+@keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blinking-cursor {
+from, to { border-color: transparent }
+50% { border-color: #555; }
+}
+
+/* delay animations */
+
+.delay-animate {
+	animation-name: delay-animate;
+	animation-duration: 1.5s;
+}
+
+@keyframes delay-animate {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+
+@media (max-width: 980px) {
+	.hero-avatar {
+		width: 100%;
+	}
+	
+	.hero-avatar-img {
+		max-width: 55%;
+	}
+
+	.hero-bubble {
+		left: 40%;
+	}
+	
+	.hero-bubble-img {
+		max-width: 50%;
+	}
+	
+	.bubble-text-1 {
+		left: 39%;
+		font-size: 6.5vw;
+	}
+
+	.bubble-text-2 {
+		left: 40%;
+		font-size: 3vw;
+	}
+}

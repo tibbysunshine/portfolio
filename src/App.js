@@ -1,26 +1,48 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Hero from "./components/hero";
+import Nav from "./components/nav";
+import About from "./components/about";
+import Portfolio from "./components/portfolio";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      screenWidth: 0,
+      scrollVisiblity: false
+    }
+  }
+
+  componentDidMount() {
+    this.setState({ screenWidth: window.innerWidth });
+    document.addEventListener("scroll", () => {
+      if (window.pageYOffset > 200) {
+        this.setState({scrollVisiblity: true});
+      } else {
+        this.setState({scrollVisiblity: false});
+      }
+    });
+  }
+
+  ScrollToTop = () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTo = 0;
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <Hero />
+        <Nav />
+        <About />
+        <Portfolio />
+        {this.state.scrollVisiblity &&
+          <div id="back-to-top" onClick={this.ScrollToTop()}><a href="/#">Back to Top</a></div>
+        }
+      </div>
+    );
+  }
 }
 
 export default App;

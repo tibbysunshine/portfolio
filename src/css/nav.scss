@@ -1,0 +1,87 @@
+/**
+Navigation Bar
+**/
+
+#nav-header {
+    height: 80px;
+    width: 100%;
+    max-width: 100vw;
+    padding: 0 6rem ;
+    box-sizing: border-box;
+    background: $white;
+    z-index: 500;
+}
+
+.nav-wrapper {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.nav-content {
+    padding: 16px;
+}
+
+.nav-sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav-sticky + #hero {
+    padding-top: 102px;
+}
+
+// Navigation Links
+
+.nav-logo {
+    float: left;
+    line-height: 80px;
+    font-weight: bold;
+    font-size: 2em;
+
+    a {
+        color: $dark-gray;
+    }
+
+    &:hover {
+        color: $primary-teal;
+    }
+}
+
+.nav-links {
+    float: right;
+    display: inline;
+
+    ul {
+        display: table-cell;
+        vertical-align: middle;
+        height: 80px;
+        font-weight: bold;
+
+        li {
+            display: inline;
+            margin-left: 30px;
+            cursor: pointer;
+
+            a {
+                text-decoration: none;
+                color: $dark-gray;
+                transition: 200ms;
+                font-size: 1.5em;
+
+
+                &:hover {
+                    color: $primary-teal;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    #nav-header {
+        padding: 0 2rem;
+    }
+}

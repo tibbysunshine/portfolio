@@ -1,0 +1,60 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,700,800);
+
+@import './reset.scss';
+@import './normalize.scss';
+@import './skeleton.scss';
+@import './variables.scss';
+@import './nav.scss';
+@import './hero.scss';
+@import './about.scss';
+@import './portfolio.scss'; 
+@import './contact.scss';
+
+
+/** 
+*** GLOBAL STYLES
+**/
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    text-decoration: none;
+}
+
+// Scroll To Top Button
+
+#back-to-top {
+	position: fixed;
+	z-index: 1000;
+	bottom: 20px;
+	right: 20px;
+}
+#back-to-top a {
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: #515A5F url(../images/backtotop.png) no-repeat center center;
+	text-indent: -9999px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+	-webkit-transition: 0.2s all linear;
+	-moz-transition: 0.2s all linear;
+	-o-transition: 0.2s all linear;
+	transition: 0.2s all linear;
+}
+#back-to-top a:hover {
+	background-color: #222222;
+}
+
+.section-title {
+    margin-left: 6rem;
+}
+
+@media (max-width: 750px) {
+    .section-title {
+        margin-left: 2rem;
+    }
+}
